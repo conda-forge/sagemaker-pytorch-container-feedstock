@@ -1,17 +1,17 @@
 {% set name = "sagemaker-pytorch-container" %}
-{% set version = "1.1.0" %}
+{% set version = "1.2.0" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://github.com/aws/{{ name }}/archive/v{{ version }}.tar.gz"
-  sha256: 51ca0b0a2241dcb3b34762c730330daf27139b736d732dbd6d87e54eb958a803
+  url: https://github.com/aws/{{ name }}/archive/v{{ version }}.tar.gz
+  sha256: fee6df076179a103d0e8ac5c5a95c7727242020a81c4b205823d99536b556e08
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
 requirements:
@@ -31,11 +31,11 @@ test:
     - sagemaker_pytorch_container
 
 about:
-  home: "https://github.com/aws/sagemaker-pytorch-container/"
+  home: https://github.com/aws/sagemaker-pytorch-container/
   license: Apache-2.0
   license_family: APACHE
   license_file: LICENSE
-  summary: "Docker container for running PyTorch scripts to train and host PyTorch models on SageMaker."
+  summary: Docker container for running PyTorch scripts to train and host PyTorch models on SageMaker.
   doc_url: https://sagemaker.readthedocs.io/en/stable/using_pytorch.html
   dev_url: https://github.com/aws/sagemaker-pytorch-container/
 
