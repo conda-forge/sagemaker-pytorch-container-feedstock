@@ -5,7 +5,7 @@ Home: https://github.com/aws/sagemaker-pytorch-container/
 
 Package license: Apache-2.0
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Docker container for running PyTorch scripts to train and host PyTorch models on SageMaker.
 
