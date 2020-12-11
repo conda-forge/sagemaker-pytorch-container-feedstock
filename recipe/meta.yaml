@@ -1,5 +1,5 @@
 {% set name = "sagemaker-pytorch-container" %}
-{% set version = "2.3.0" %}
+{% set version = "2.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/aws/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: e5cbace66ccbbfb6f71438120331b47bc668c626e61752317cca12bb8bfad960
+  sha256: ef54399dad9a7b4454fdbb90741bb2cdd285ce12f901420022e31201c25a8b95
 
 build:
   number: 0
